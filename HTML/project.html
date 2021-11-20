@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+    <div class="maindiv">
+        
+          <div data-key="C4" id="i01" class="white btn">
+            <h1>C4</h1>
+            </div>
+          <div data-key="Db4" id="i02" class="black btn">
+            
+          </div>
+          <div data-key="D4" id="i03" class="white btn">
+            <h1>D4</h1>
+          </div>
+          
+          <div data-key="Eb4" id="i04" class="black btn">
+            
+          </div>
+          <div data-key="E4" id="i05" class="white btn">
+              <h1>E4</h1>
+          </div>
+          <div data-key="F4" id="i06" class="white btn">
+            <h1>F4</h1>
+          </div>
+          <div data-key="Gb4" id="i07" class="black btn">
+          
+          </div>
+           <div data-key="G4" id="i08" class="white btn">
+              <h1>G4</h1>
+          </div>
+          <div data-key="Ab4" id="i09" class="black btn">
+            
+          </div>
+          <div data-key="A4" id="i10" class="white btn">
+            <h1>A4</h1>
+          </div>
+          <div data-key="Bb4" id="i11" class="black btn">
+            
+          </div>
+          <div data-key="B4" id="i12" class="white btn">
+            <h1>B4</h1>
+          </div>
+          <div data-key="C5" id="i13" class="white btn">
+            <h1>C5</h1>
+          </div>
+          <div data-key="Db5" id="i14" class="black btn">
+            
+          </div>
+          <div data-key="D5" id="i15" class="white btn">
+            <h1>D5</h1>
+          </div>
+          <div data-key="Eb5" id="i16" class="black btn">
+            
+          </div>
+          <div data-key="E5" id="i17" class="white btn">
+              <h1>E5</h1>
+          </div>
+    </div>
+    
+    
+    
+    <audio src="./sounds/C4.mp3" id="C4"></audio>
+    <audio src="./sounds/Db4.mp3" id="Db4"></audio>
+    <audio src="./sounds/D4.mp3" id="D4"></audio>
+    <audio src="./sounds/Eb4.mp3" id="Eb4"></audio>
+    <audio src="./sounds/E4.mp3" id="E4"></audio>
+    <audio src="./sounds/F4.mp3" id="F4"></audio>
+    <audio src="./sounds/Gb4.mp3" id="Gb4"></audio>
+    <audio src="./sounds/G4.mp3" id="G4"></audio>
+    <audio src="./sounds/Ab4.mp3" id="Ab4"></audio>
+    <audio src="./sounds/A4.mp3" id="A4"></audio>
+    <audio src="./sounds/Bb4.mp3" id="Bb4"></audio>
+    <audio src="./sounds/B4.mp3" id="B4"></audio>
+    <audio src="./sounds/C5.mp3" id="C5"></audio>
+    <audio src="./sounds/Db5.mp3" id="Db5"></audio>
+    <audio src="./sounds/D5.mp3" id="D5"></audio>
+    <audio src="./sounds/Eb5.mp3" id="Eb5"></audio>
+    <audio src="./sounds/E5.mp3" id="E5"></audio>
+    <script src="./piano.js"></script>
+    
+    
+    
+    
+    
+    
+    <button id="box" onclick="changecolor()">Change Color</button>
+    <br><br>
+    <div align="center">
+        <marquee height="60%" direction="down"> THANK YOU</marquee>
+    </div>
+    <script>
+        function changecolor(){
+            var r= Math.floor(Math.random()*256);
+            var g= Math.floor(Math.random()*256);
+            var b= Math.floor(Math.random()*256);
+            var mycolor1 = "rgb("+ r + "," + g + "," + b +")";
+            var mycolor2 = "rgb("+ g + "," + b + "," + r +")";
+            var mycolor3 = "rgb("+ b + "," + r + "," + g +")";
+            var mycolor4 = "rgb("+ r + "," + g + "," + b +")";
+            var mycolor5 = "rgb("+ g + "," + b + "," + r +")";
+            var mycolor6 = "rgb("+ b + "," + r + "," + g +")";
+            var mycolor7 = "rgb("+ r + "," + g + "," + b +")";
+            var mycolor8 = "rgb("+ g + "," + b + "," + r +")";
+            var mycolor9 = "rgb("+ b + "," + g + "," + r +")";
+            var mycolor10 = "rgb("+ r + "," + b + "," + g +")";
+            
+            document.getElementById("i01").style.background=mycolor1;
+            document.getElementById("i03").style.background=mycolor2;
+            document.getElementById("i05").style.background=mycolor3;
+            document.getElementById("i06").style.background=mycolor4;
+            document.getElementById("i08").style.background=mycolor5;
+            document.getElementById("i10").style.background=mycolor6;
+            document.getElementById("i12").style.background=mycolor7;
+            document.getElementById("i13").style.background=mycolor8;
+            document.getElementById("i15").style.background=mycolor9;
+            document.getElementById("i17").style.background=mycolor10;
+        }
+    </script>
+    
+    
+</body>
+</html>
