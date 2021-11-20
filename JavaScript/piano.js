@@ -1,3 +1,4 @@
+//JS File
 //select all the button divs
 
 const btns = document.querySelectorAll(".btn");
